@@ -48,10 +48,6 @@ export default function ClientePage() {
           setTocandoToque(true);
           exibirMensagem("Chamada recebida da Recepção!", "info");
         });
-  
-        // ☎️ Liga automaticamente para a recepção assim que o peer estiver pronto
-        iniciarChamada("recepcao", setChamadaAtiva);
-        exibirMensagem("Ligando automaticamente para a recepção...", "info");
       });
     }
   }, [id, clienteValido]);
@@ -198,3 +194,7 @@ export default function ClientePage() {
     </main>
   );
 }
+
+
+
+
